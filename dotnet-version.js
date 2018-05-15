@@ -67,7 +67,7 @@ function registerHandlers(versions, callback) {
     versions.forEach((version) => {
         if (version === 'v4') {
             // versions 4.5+ are incremental so they have a unified mechanism to determine the current version
-            //handlers['v4'] =  require('./check-45-plus')
+            handlers['v4'] =  require('./check-45-plus')
             return
         }  
 
